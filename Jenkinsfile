@@ -5,7 +5,7 @@ pipeline {
              steps{
                 script{
                     checkout([$class: 'GitSCM', 
-                    branches: [[name: '*/main']],
+                    branches: [[name: '*/master']],
                     extensions: [[$class: 'CloneOption', timeout: 120]],
                         userRemoteConfigs: [[
                             credentialsId: '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', 
